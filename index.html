@@ -1,30 +1,130 @@
 <html>
+<!--PARA ENTENDER AS TAGS SE TIVER ALGUMA DUVIDA, É SÓ OLHAR NO CADERNO DE APLICAÇÕES PRA WEB, POR EX, A TAG OVERFLOW: HIDDEN (COLOCADA NO CSS DA PARTE DAS COLUNAS COM OS ICONES)
+FOI MUITO IMPORTANTE PRO CONTEUDO NÃO "TRANSBORDAR" E A CAIXA DE CONTEÚDO SE ADAPTAR AUTOMATICAMENTE, NÃO DEIXANDO AQUELAS SOBREPOSIÇÕES QUANDO NÃO TINHA ELE (TIRA ELE DPS E OLHA CM FICA), POR ISSO OLHA NO CADERNO OQ VC N SABE-->
     <head>
         <title>Página de estrutura básica</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="keywords" content="ODS">
         <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/jpg" href="imagens/ods2.jpg" />
+        <!--COLOCANDO ICONE NO TITLE TA PAGINA DOIDO-->
     </head>
+
     <body>
-        <div class="partedecima">
-            <h1 id="titulo"><i>É hora de mudar!</i> </h1>
-            <img class="imagemods" src="imagens/ods2.jpg" alt="a"/>
-        </div>
-        <div class="corpodotexto">
-            <h2>Informações sobre mim: </h2>
-            <p><b>Nome:</b> <i>Kayque Meira Siqueira</i> <br>
-                <b>Idade:</b></b> <i>16y</i> <br>
-                <b>Cidade/estado:</b> <i>Contagem-MG</i>
-            </p>
-            <h2><br>Objetivos futuros do site: </h2>
-            <p><i>Investigar e informar sobre os Diversos Objetivos de Desenvolvimento <br> Sustentável (ODS) existentes no mundo e tratar a respeito de algum deles, <br>procurando encontrar alguma solução ou método que ajude a humanidade <br> a alcançar essas metas.</i></p>
-            <h2><br>Contato: </h2>
-            <p>
-                <i>
-                    <a href="https://www.instagram.com/siqueirakayque/">Instagram</a>
-                </i>
-            </p>
-        </div>
+        <header>
+            <div>
+                <img src="imagens/sustentabilidade Logo.png" alt="" id="logo">
+            </div>
+            <ul id="lista">
+                <li class="elementosdalista"><a href="#primeiradivisao">ODS?</a></li>
+                <li class="elementosdalista"><a href="#segundadivisao">Objetivos</a></li>
+                <li class="elementosdalista"><a href="#terceiradivisao">Sobre</a></li>
+                <li class="elementosdalista"><a href="#contato">Contato</a></li>
+            </ul>
+        </header>
+
+        <section class="partedecima">
+            <h1 id="titulo">Objetivos de Desenvolvimento Sustentável (ODS) </h1>
+            <h2><i>Objetivo 15. Proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres, gerir de forma
+                    sustentável as florestas, combater a desertificação, deter e reverter a degradação da terra e deter a
+                    perda de biodiversidade</i><br><br><a href="https://nacoesunidas.org/pos2015/ods15/"
+                    target="blanck">Saiba Mais</a>
+            </h2>
+
+            <img class="imagemods" src="imagens/sustentabilidade1.png" alt="a" />
+        </section>
+
+        <section class="corpodotexto">
+
+            <section id="primeiradivisao">
+                <div id="primeiroparagrafo" class="elementosprimeiradivisao">
+                    <h2>Mas o que são os ODS? </h2>
+                    <hr>
+                    <p><i>São uma nova agenda de desenvolvimento sustentável. Esta agenda é formada
+                            pelos 17 Objetivos de Desenvolvimento Sustentável (ODS), que devem ser implementados
+                            por todos os países do mundo durante os próximos 15 anos, até 2030, dentre os quais existem
+                            várias metas, como acabar com a pobreza de todas as suas formas, em todos os lugares; acabar com
+                            a fome; Assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de
+                            aprendizagem ao longo da vida para todos, etc. </i><br></p>
+                </div>
+                <div id="primeirovideo" class="elementosprimeiradivisao">
+                    <iframe width="100%" height="315" src="https://www.youtube.com/embed/ZSrhXP4-aec" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </section>
+            <div id="botao">
+                <div id="saibamaisods">
+                    <a href="https://nacoesunidas.org/pos2015/" target="blanck"> Saiba
+                        Mais Sobre ODS</a>
+                </div>
+            </div>
+
+
+
+
+            <section id="segundadivisao">
+                <h2 class="subtitulos">Objetivos</h2>
+
+                <hr>
+
+                <div class="coluna">
+                    <div class="icone">
+                        <img src="imagens/recycle.svg" alt="">
+                    </div>
+                    <h2 class="subtitulos">Reciclar</h2>
+                    <p>Aqui irei fazer um texto sobre os benefícios da reciclagem de materiais e os malefícios ao ambiente se esses insumos forem descartados de maneira incorreta, assim prejudicando todo um ecossistema. Aqui irei fazer um texto sobre os benefícios da reciclagem de materiais e os malefícios ao ambiente se esses insumos forem descartados de maneira incorreta, assim prejudicando todo um ecossistema.  </p>
+                </div>
+                <div class="coluna">
+                    <div class="icone">
+                        <img src="imagens/forest.svg" alt="">
+                    </div>
+                    <h2 class="subtitulos">Cuidar</h2>
+                    <p>Aqui irei fazer um texto sobre a importância da preservação ambiental e os seus benefícios para o planeta de forma resumida, além de fornecer também algumas dicas de como ajudar. Aqui irei fazer um texto sobre a importância da preservação ambiental e os seus benefícios para o planeta de forma resumida, além de fornecer também algumas dicas de como ajudar. </p>
+                </div>
+                <div class="coluna">
+                    <div class="icone">
+                        <img src="imagens/healthcare-and-medical.svg" alt="">
+                    </div>
+                    <h2 class="subtitulos">Restaurar</h2>
+                    <p>Aqui irei apresentar alguns exemplos de ambientes que ja foram ou estão em processo de degradação e trarei algumas práticas que podem ajudar a reverter esse cenário.
+                    Aqui irei apresentar alguns exemplos de ambientes que ja foram ou estão em processo de degradação e trarei algumas práticas que podem ajudar a reverter esse cenário.
+                    </p>
+                </div>
+                    <!--<i>Investigar e informar sobre o 15° objetivo dessas metas, visando
+                        encontrar alguma solução ou método que ajude a humanidade
+                        a alcançar esse tópico e, simultaneamente, repassar informações e práticas
+                        sustentáveis que todos os cidadãos podem realizar para ajudar o país a
+                        concretizar esse projeto.</i>-->
+                
+            </section>
+
+            <section id="terceiradivisao">
+                <h2>Informações sobre mim: </h2>
+                <p><b>Nome:</b> <i>Kayque Meira Siqueira</i> <br>
+                    <b>Idade:</b></b> <i>16y</i> <br>
+                    <b>Cidade/estado:</b> <i>Contagem-MG</i>
+                </p>
+            </section>
+
+            <section id="contato">
+                <h2><br>Contato: </h2>
+                <p>
+                <div id="instagram">
+                    <a href="https://www.instagram.com/siqueirakayque/" target="blanck"><img id="iconesdasredes"
+                            src="imagens/instagram.svg" alt="icone do instagram">Instagram</a>
+                    <!--TAG BLANC PRO LINK, QUANDO CLICADO, ABRIR EM UMJA NOVA ABA-->
+                </div>
+                <div id="twitter">
+                    <a href="https://twitter.com/KayqueSiqueira7" target="blanck"><img id="iconesdasredes"
+                            src="imagens/twitter.svg" alt="icone do twitter">Twitter</a>
+                </div>
+                </p>
+            </section>
+
+        </section>
+
     </body>
+
 </html>
