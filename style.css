@@ -1,9 +1,14 @@
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+
+html, body {
     margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     background-color: #f7f7f7;
 }
+
 
 header{
     background-color: black;
@@ -46,24 +51,28 @@ header .elementosdalista:hover{
 }
 .partedecima{     
     text-align: center; 
-    padding: 60px 300px 120px 300px; 
+    padding-top: 1px;
+    padding-bottom: 120px;
     font-family: 'Times New Roman', Times, serif;  
     background: url(imagens/paisagem2.png);
     height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
-    background-size: cover; /*cobrir todo o espaço do bloco*/  
+    background-size: cover; /*cobrir todo o espaço do bloco*/ 
+    /*clear: both; quem sabe né*/  
 }
 #titulo{
     font-size: 75px;  
     margin-bottom: 10px; 
     color: white;
-    padding-bottom: 40px;
     margin-top: 10%;
+    padding-left: 15%;
+    padding-right: 15%;
     text-shadow: gray 3px -3px;
 }
 .partedecima h2{
     font-size: 30px;
-    padding-bottom: 30px;
+    margin-bottom: 50px;
     color: rgb(255, 255, 255);
     padding-left: 20%;
     padding-right: 20%;
@@ -75,18 +84,27 @@ header .elementosdalista:hover{
     border-radius: 5px;
     padding: 5px;
     color:  white;
+    margin-top: 20px;
 }
 .partedecima a:hover{
     background-color: rgb(175, 232, 250);
     color: black;
 }
-.partedecima img{
-    width: 25%;
-    height: 32%;
+#imageminicial{
+    width: 100%;   
+    height: 30%;
+}#imageminicial img{
+    height: auto;
+    width: 18%;
+    max-width: 100%;
+
 }
+
 .imagemods{ 
+    max-width: 100%;
     border-radius: 100px;
-    width: 500px;   
+    width: 500px; 
+    max-height: 100%;  
 }
 
 
@@ -105,7 +123,6 @@ hr{
     width: 40px;
 }
 
-
 .corpodotexto p{   
     color: #006680;  
     /*width: 40%; colocar isso es textos especificos*/  
@@ -116,6 +133,9 @@ hr{
     overflow: hidden;
     padding: 30px 0 20px 0;
     display: block;
+    padding-top: 60px;
+    background-color: rgb(237, 237, 237)
+    
 }
 
 .elementosprimeiradivisao{
@@ -131,10 +151,22 @@ hr{
 #primeiroparagrafo h2{
     text-align: center;
 }
+
+#terceiradivisao{
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 30px 0 65px 0;
+    display: block;
+    background-color: rgb(237, 237, 237)/*rgb(235, 235, 235)*/;
+}
+#segundoparagrafo h2{
+    text-align: center;
+}
 #botao{
-    margin-top: 15px;
-    margin-bottom: 15px;
-    text-align: center;  
+    padding-bottom: 15px;
+    text-align: center; 
+    background-color: rgb(237, 237, 237) 
 }
 #saibamaisods{  
     text-align: center;
@@ -161,17 +193,23 @@ hr{
     margin: 0 auto;
     overflow: hidden; /*Comando super importante*/
     padding: 30px 0 20px 0;
+    
 }
-#segundadivisao .subtitulos{
+.subtitulos{
     text-align: center;
 }
 
 .coluna{
-    width: 15%;
-    padding: 20px 9.15% 0 9.15%;
+    width: 29.15%;
+    padding: 0 2%;
     float: left;
     text-align: justify;
     position: relative;
+}
+.coluna p{
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
 }
 .icone{
     margin: 0 auto;
@@ -192,18 +230,166 @@ hr{
 
 
 
-
-
-#contato a{
-    margin-left: 60px;
+.coluna2{
+    float: left;
+    width: 29.15%;
+    padding: 0 2%;
+    text-align: center;
+}
+.coluna2 p{
+    text-align: justify;
+}
+.imagens{
+    height: 300px;
+    width: 100%;
+    border: solid 2px ;
+    border-radius: 10px;
+}
+.botao2{
+    width: 100%;
+    margin-top: 30px;
+    height: auto;
+}
+.botao2 a{
+    border: solid 2px black;
+    padding: 1.3%;
+    border-radius: 5px;
     text-decoration: none;
-    color: rgb(116, 60, 70);  
-    display: flex;  
-    align-items: center;
-    width: 130px; 
-    padding-bottom: 10px;   
+    color: black;
+}
+.botao2 a:hover{
+    transition: 900ms;
+    background-color: rgb(4, 209, 21);
+}
+
+
+
+
+#redessociais{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 15%;
+    margin-left: 15%;
+    padding-bottom: 20px;
+}
+#redessociais img{
+    width: 50px;
+    height: 50px
+}
+#redessociais a{
+    width: auto;
+    height: 100%;
+}
+#contato a{
+    text-decoration: none;
+    color: rgb(116, 60, 70);      
 }
 #contato #iconesdasredes{
-    width: 25px;
-    margin-right: 10px;
+    width: 25px;  
 }
+
+#contato{
+    background-color:  #00a3df/*#1495b6*/;
+    float: left;
+    width: 100%;
+    color: white;
+}
+#contato p{
+    color: white;
+}
+
+#autoria{
+    width: 25%;
+    text-align: center;
+    float: left;
+    padding: 0 2%;
+}
+#autoria p{
+    text-align: left;
+    padding-left: 5%;
+}
+#autoria h2{
+    padding-top: 20px;
+    margin-top: 0;
+}
+#autoria p{    
+    font-size: 20px;
+    
+}
+#creditos{
+    width: 40%;
+    float: left;
+    text-align: center;
+    padding: 0 2%;
+}
+#referencias{
+    width: 23%;
+    float: left;
+    padding: 0 2%;
+    text-align: center;
+}
+#referencias p{
+    width: 100%;
+    text-align: left; 
+}
+
+
+/*Responsividade */
+@media all and (max-width: 768px) {
+    .coluna, .elementosprimeiradivisao, .coluna2 {
+      width: 80%;
+      padding: 0;
+      margin: 10px auto;
+      float: none;
+    }
+    #saibamaisods{
+        width: 50%;
+        margin: auto;
+    }
+    header #logo {
+      position: relative;
+      width: 100%;
+      margin-left: 0px;
+      text-align: center;
+    }
+    #lista {
+      visibility: hidden;
+    }
+    figure h1.titulo {
+      margin-top: 40%;
+    }
+    figure h2.titulo {
+      margin: 0 10% 0 10%;
+    }
+    #contato{
+        width: 100%;
+    }
+    #autoria{
+        float: none;
+        width: 100%;
+    }
+    #referencias{
+        float: none;
+        width: 100%;
+    }
+    #creditos{
+        float: none;
+        width: 100%;
+    }
+    .partedecima h2 {
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    #titulo{
+        font-size: 50px;  
+        margin-bottom: 10px; 
+        color: white;
+        margin-top: 20%;
+        padding-left: 10%;
+        padding-right: 10%;
+        text-shadow: gray 3px -3px;
+    }
+}
+
