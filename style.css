@@ -7,6 +7,7 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     background-color: #f7f7f7;
+    
 }
 
 
@@ -93,7 +94,8 @@ header .elementosdalista:hover{
 #imageminicial{
     width: 100%;   
     height: 30%;
-}#imageminicial img{
+}
+#imageminicial img{
     height: auto;
     width: 18%;
     max-width: 100%;
@@ -123,10 +125,7 @@ hr{
     width: 40px;
 }
 
-.corpodotexto p{   
-    color: #006680;  
-    /*width: 40%; colocar isso es textos especificos*/  
-}
+
 #primeiradivisao{
     width: 100%;
     margin: 0 auto;
@@ -332,15 +331,21 @@ hr{
     width: 100%;
     text-align: left; 
 }
-
-
+.fundo{
+    box-sizing: border-box;
+}
 /*Responsividade */
-@media all and (max-width: 768px) {
+@media all and (max-width: 968px)  {
     .coluna, .elementosprimeiradivisao, .coluna2 {
       width: 80%;
       padding: 0;
       margin: 10px auto;
       float: none;
+      box-sizing: border-box;
+    }
+    .fundo{
+        box-sizing: border-box;
+        width: 100%;
     }
     #saibamaisods{
         width: 50%;
@@ -351,15 +356,10 @@ hr{
       width: 100%;
       margin-left: 0px;
       text-align: center;
+
     }
     #lista {
       visibility: hidden;
-    }
-    figure h1.titulo {
-      margin-top: 40%;
-    }
-    figure h2.titulo {
-      margin: 0 10% 0 10%;
     }
     #contato{
         width: 100%;
@@ -367,7 +367,7 @@ hr{
     #autoria{
         float: none;
         width: 100%;
-    }
+    }   
     #referencias{
         float: none;
         width: 100%;
@@ -383,13 +383,17 @@ hr{
         padding-right: 20%;
     }
     #titulo{
-        font-size: 50px;  
-        margin-bottom: 10px; 
+        font-size: 40px;   
         color: white;
         margin-top: 20%;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 3%;
+        padding-right: 3%;
         text-shadow: gray 3px -3px;
+    }     
+}
+@media all and (max-height: 770px){
+    #imageminicial{
+        visibility: hidden;
     }
 }
 
