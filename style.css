@@ -6,6 +6,7 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     background-color: #f7f7f7;
+    overflow-x: hidden; 
     
 }
 
@@ -381,7 +382,7 @@ hr{
         padding-right: 20%;
     }
     #titulo{
-        font-size: 40px;   
+        font-size: 36px;   
         color: white;
         margin-top: 20%;
         padding-left: 3%;
