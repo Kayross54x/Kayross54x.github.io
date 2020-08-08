@@ -70,10 +70,10 @@ header label{
     opacity: 0.86;
     background-color: black;
     height: 800px;
-    width: 50%;
+    width: 60%;
     position: absolute;
     transition: all .2s linear;
-    left:-300px;
+    left:-600px;
     visibility: hidden;
 }
 nav{
@@ -99,7 +99,7 @@ nav a{
 }
 
 #check:checked ~ .barra{
-    transform: translateX(300px);
+    transform: translateX(600px);
 }
 
 
@@ -432,7 +432,7 @@ hr{
         float: none;
         width: 100%;
     }
-    .partedecima h2 {
+    #partedecima h2 {
         font-size: 20px;
         color: rgb(255, 255, 255);
         padding-left: 20%;
@@ -447,7 +447,7 @@ hr{
         text-shadow: gray 3px -3px;
     }  
     #primeiroparagrafo p{
-        font-size: 15px;
+        font-size: 13px;
     }
     header input{
         visibility: visible;
