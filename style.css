@@ -6,7 +6,7 @@ html, body {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: justify;
     background-color: #f7f7f7;
-    overflow-x: hidden; 
+    overflow-x: hidden; /*ESSE COMANDO TIROU A BARRA BRANCA NA DIREITA DA TELA DO RESPONSIVO!!!!!!*/
     
 }
 
@@ -49,7 +49,61 @@ header .elementosdalista a{
 header .elementosdalista:hover{
     background-color: rgb(0, 195, 255);
 }
-.partedecima{     
+
+
+header input{
+    visibility: hidden;
+}
+header label{
+    visibility: hidden;
+}
+#check{
+    display: none;
+}
+#iconecheck{
+    cursor: pointer;
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+}
+.barra{
+    opacity: 0.86;
+    background-color: black;
+    height: 800px;
+    width: 50%;
+    position: absolute;
+    transition: all .2s linear;
+    left:-300px;
+    visibility: hidden;
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    
+}
+nav a{
+    text-decoration: none;
+}
+.link{
+    opacity: 0.9; /*Deixar a caixa transparente*/
+    background-color: black;
+    padding: 20px;
+    font-family: "Arial";
+    font-size: 12pt;
+    transition: all .2s linear;
+    color: #f4f4f9;
+}
+.link:hover{
+    background-color: rgb(0, 117, 10);
+}
+
+#check:checked ~ .barra{
+    transform: translateX(300px);
+}
+
+
+#partedecima{     
     text-align: center; 
     padding-top: 1px;
     padding-bottom: 120px;
@@ -70,14 +124,14 @@ header .elementosdalista:hover{
     padding-right: 15%;
     text-shadow: gray 3px -3px;
 }
-.partedecima h2{
+#partedecima h2{
     font-size: 30px;
     margin-bottom: 50px;
     color: rgb(255, 255, 255);
     padding-left: 20%;
     padding-right: 20%;
 }
-.partedecima a{
+#partedecima a{
     font-size: 20px;
     text-decoration: none;
     border: solid black 2px;
@@ -86,7 +140,7 @@ header .elementosdalista:hover{
     color:  white;
     margin-top: 20px;
 }
-.partedecima a:hover{
+#partedecima a:hover{
     background-color: rgb(175, 232, 250);
     color: black;
 }
@@ -154,7 +208,7 @@ hr{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    padding: 30px 0 65px 0;
+    padding: 10px 0 65px 0;
     display: block;
     background-color: rgb(237, 237, 237)/*rgb(235, 235, 235)*/;
 }
@@ -218,7 +272,6 @@ hr{
 }
 .icone:hover{
     background-color: rgb(0, 216, 18);
-
 }
 .icone img{
     width: 60px;
@@ -234,9 +287,7 @@ hr{
     padding: 0 2%;
     text-align: center;
 }
-.coluna2 p{
-    text-align: justify;
-}
+
 .imagens{
     height: 300px;
     width: 100%;
@@ -341,21 +392,27 @@ hr{
       margin: 10px auto;
       float: none;
       box-sizing: border-box;
+      display: block; /*AS CAIXAS VÃO EMPURRAR O Q ESTÁ DO LADO PARA BAIXO, ASSIM OCUPADO TODO O ESPAÇO DA LINHA*/
     }
     .fundo{
         box-sizing: border-box;
         width: 100%;
     }
     #saibamaisods{
-        width: 50%;
+        width: 39%;
         margin: auto;
     }
-    header #logo {
+    header #logodiv {
       position: relative;
       width: 100%;
-      margin-left: 0px;
       text-align: center;
-
+    }
+    header #logo{
+        margin-left: 0px;
+        transform: translateX(-50%); /*COMANDO PRA FAZER COM QUE O ELEMENTO SE "TRANSFORME", SE LOCOMOVENDO 50% DO SEU TAMANHO PRA ESQUERDA NO EIXO X */
+    }
+    .coluna2 img{
+        height: 40%;
     }
     #lista {
       visibility: hidden;
@@ -388,7 +445,20 @@ hr{
         padding-left: 3%;
         padding-right: 3%;
         text-shadow: gray 3px -3px;
-    }     
+    }  
+    #primeiroparagrafo p{
+        font-size: 15px;
+    }
+    header input{
+        visibility: visible;
+    }
+    header label{
+        visibility: visible;
+    }
+    .barra{
+        visibility: visible;
+    }
+
 }
 @media all and (max-height: 770px){
     #imageminicial{
