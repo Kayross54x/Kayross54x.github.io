@@ -491,11 +491,13 @@ hr{
     }
     #contato{
         width: 100%;
+        padding: 0;
     }
     #autoria{
         float: none;
         width: 100%;
         border-bottom: 1px solid white;
+        padding: 0;
     } 
     #autoria h2{
         display: flex;
@@ -518,6 +520,7 @@ hr{
         float: none;
         width: 100%;
         margin-bottom: 30px;
+        padding: 0;
     }
     #referencias h2{
         font-size: 18px
@@ -531,6 +534,7 @@ hr{
         width: 100%;
         border-bottom: 1px solid white;
         margin-top: 20px;
+        padding: 0;
     }
     #creditos p{
         font-size: 13px;
