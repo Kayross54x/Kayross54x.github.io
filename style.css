@@ -183,9 +183,8 @@ hr{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    padding: 60px 0 20px 0;
+    padding: 85px 0 20px 0;
     display: block;
-    padding-top: 60px;
     background-color: rgb(237, 237, 237)  
 }
 
@@ -207,7 +206,7 @@ hr{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    padding: 10px 0 65px 0;
+    padding: 50px 0 65px 0;
     display: block;
     background-color: rgb(237, 237, 237)/*rgb(235, 235, 235)*/;
 }
@@ -243,7 +242,7 @@ hr{
     width: 100%;
     margin: 0 auto;
     overflow: hidden; /*Comando super importante*/
-    padding: 30px 0 20px 0;
+    padding: 55px 0 20px 0;
     
 }
 .subtitulos{
