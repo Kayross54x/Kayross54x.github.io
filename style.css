@@ -183,11 +183,10 @@ hr{
     width: 100%;
     margin: 0 auto;
     overflow: hidden;
-    padding: 30px 0 20px 0;
+    padding: 60px 0 20px 0;
     display: block;
     padding-top: 60px;
-    background-color: rgb(237, 237, 237)
-    
+    background-color: rgb(237, 237, 237)  
 }
 
 .elementosprimeiradivisao{
@@ -201,7 +200,7 @@ hr{
 }
 
 #primeiroparagrafo h2{
-    text-align: center;
+    text-align: center;  
 }
 
 #terceiradivisao{
@@ -314,6 +313,51 @@ hr{
 
 
 
+
+#hrdebaixo{
+    margin-top: 25px;
+}
+
+#menu5{
+    padding: 20px 30px 20px 30px;
+    display: flex;
+    width: 100%;
+}
+#Caixa1{
+    width: 50%;  
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#Caixa2{
+    margin-left: .8rem;
+    width: 50%;
+    display: grid;
+    align-items: baseline;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    box-sizing: border-box;
+    padding-right: 30px;
+}
+.imagensgrid{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.imagensgrid img{
+    width: 200px;
+    height: 150px;
+    border-radius: .5rem;
+}
+
+
+
+
+
 #redessociais{
     display: flex;
     justify-content: space-between;
@@ -386,7 +430,7 @@ hr{
 }
 /*Responsividade */
 @media all and (max-width: 968px)  {
-    .coluna, .elementosprimeiradivisao, .coluna2 {
+    .coluna, .elementosprimeiradivisao, .coluna2, .elementosquartadivisao {
       width: 80%;
       padding: 0;
       margin: 10px auto;
@@ -417,20 +461,84 @@ hr{
     #lista {
       visibility: hidden;
     }
+    #Caixa1{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+         
+    }
+    #Caixa1 h2{
+        font-size: 18px;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    #caixa2{
+        width: 100%; 
+        box-sizing: border-box; 
+    }
+    .imagensgrid{
+        padding: 4%;
+        box-sizing: border-box;
+    }
+    .imagensgrid img{
+        width: 90%;
+        height: 90%;
+    }
+    #menu5{
+        display: block;
+        box-sizing: border-box;
+    }
     #contato{
         width: 100%;
     }
     #autoria{
         float: none;
         width: 100%;
-    }   
+        border-bottom: 1px solid white;
+    } 
+    #autoria h2{
+        display: flex;
+        justify-content: center;
+        font-size: 18px;
+        
+    }
+    #autoria p{
+        font-size: 13px;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } 
+    #redessociais a img{
+        height: 35px;
+    } 
     #referencias{
         float: none;
         width: 100%;
+        margin-bottom: 30px;
+    }
+    #referencias h2{
+        font-size: 18px
+    }
+    #referencias p{
+        font-size: 13px;
+        text-align: center;
     }
     #creditos{
         float: none;
         width: 100%;
+        border-bottom: 1px solid white;
+        margin-top: 20px;
+    }
+    #creditos p{
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+    #creditos h2{
+        font-size: 20px;
+        margin-top: 0;
     }
     #partedecima h2 {
         font-size: 20px;
